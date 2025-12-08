@@ -222,14 +222,40 @@ console.log(true && '아이브');
 console.log(true && true && '아이브');
 console.log(true && false && '아이브');
 
+// ===========================================
+console.log('============================');
+
+/**
+ * 지수 연산자
+ */
+console.log(2 ** 2);
+console.log(10**3);
+
+/**
+ * null 연산자
+ */
+let name;
+console.log(name);
+
+name = name?? '김택건';
+console.log(name);
+// 좌측?? << 얘가 뭔 뜻이냐
+// ??의 좌측 값이 null || undefined일 경우 오른쪽 값을 반환해라
+
+name = name ?? '아이브';
+console.log(name); // 김택건
+// << 아이브를 넣기 전에 name이 undefined가 아님 값이 있기 때문에 '아이브' 반환 X
+
+let name2;
+name2 ??= '코드팩토리';
+console.log(name2);
+name2 ??= '아이브';
+console.log(name2);
+// ??= 이거랑 ?? 이거랑 그냥 똑같은 것임
 
 
 // ===========================================
 console.log('============================');
-
-
-
-
 
 
 
